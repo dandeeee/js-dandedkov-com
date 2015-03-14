@@ -1,0 +1,62 @@
+/*
+Error: Undefined mixin 'bg'.
+        on line 6 of style-mobilep.scss, in `bg'
+        from line 6 of style-mobilep.scss
+
+1: @import 'vars';
+2: @import 'mixins';
+3: 
+4: /* BG *\/
+5: 
+6: 	@include bg($bg-width * 0.275);
+7: 	
+8: /* Header *\/
+9: 	
+10: 	#header {
+11: 		nav {
+
+Backtrace:
+style-mobilep.scss:6:in `bg'
+style-mobilep.scss:6
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:348:in `block in visit_mixin'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/stack.rb:98:in `block in with_mixin'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/stack.rb:115:in `with_frame'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/stack.rb:98:in `with_mixin'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:346:in `visit_mixin'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/stack.rb:115:in `with_frame'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `visit'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:157:in `visit'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:8:in `visit'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/root_node.rb:20:in `render'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/engine.rb:268:in `render'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:209:in `each'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/plugin.rb:82:in `update_stylesheets'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/exec/sass_scss.rb:361:in `watch_or_update'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/exec/sass_scss.rb:51:in `process_result'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/exec/base.rb:52:in `parse'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/exec/base.rb:19:in `parse!'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.13/bin/scss:13:in `<top (required)>'
+C:/Ruby200-x64/bin/scss:23:in `load'
+C:/Ruby200-x64/bin/scss:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined mixin 'bg'.\A         on line 6 of style-mobilep.scss, in `bg'\A         from line 6 of style-mobilep.scss\A \A 1: @import 'vars';\A 2: @import 'mixins';\A 3: \A 4: /* BG */\A 5: \A 6: 	@include bg($bg-width * 0.275);\A 7: 	\A 8: /* Header */\A 9: 	\A 10: 	#header {\A 11: 		nav {"; }
