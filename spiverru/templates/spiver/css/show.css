@@ -1,0 +1,6 @@
+﻿* {	margin: 0px; padding: 0px; border: 0px;}
+
+
+div#rotator {position:relative; overflow: hidden; min-height: 430px; }
+div#rotator ul li {float:left; position:absolute; list-style: none;}
+div#rotator ul li.show {z-index:500;}
