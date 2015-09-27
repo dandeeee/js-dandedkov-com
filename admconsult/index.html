@@ -1,0 +1,1010 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ADM consult</title>
+
+        <!-- Standard Meta -->
+        <meta http-equiv='Content-Type' content='Type=text/html; charset=utf-8'>
+    
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+        <meta charset="UTF-8"/>
+    
+        <meta name=”description” content=”adm consult”/>
+
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700&subset=latin,cyrillic' rel='stylesheet'
+          type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Marcellus' rel='stylesheet' type='text/css'>
+
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
+    <script type="text/javascript" src="/assets/js/main.js"></script>
+
+    <style>
+
+        .wrapper {
+            width: 1000px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .footer .wrapper {
+            width: 768px;
+        }
+
+        .invisible {
+           opacity: 0;
+        }
+
+        .visible {
+            opacity: 1 !important;
+            -webkit-transition: opacity 0.5s ease-in;
+            -moz-transition: opacity 0.5s ease-in;
+            -o-transition: opacity 0.5s ease-in;
+            -ms-transition: opacity 0.5s ease-in;
+            transition: opacity 0.5s ease-in;
+        }
+
+        .header-logo {
+            font-family: 'Marcellus', serif !important;
+            position: relative;
+            z-index: 100;
+            line-height: 80%;
+            font-size: 250%;
+            padding: 0.8em 1em 0.5em 2.35em;
+            color: #0f1237;
+        }
+
+        .header-logo a{
+            text-decoration: none !important;
+            color: #0f1237 !important;
+        }
+
+        .header-lang {
+            position: absolute;
+            top: 1.5em;
+            right: 1em;
+            z-index: 100;
+            color: #0f1237 !important;
+        }
+
+        .header-lang a:link,
+        .header-lang a:visited {
+            color: #0f1237;
+            font-weight: bold;
+        }
+
+        a.lang-active:link,
+        a.lang-active:visited {
+            color: #05f3ff !important;
+        }
+
+        .toolbar-top {
+            width: 100%;
+            background: #0f1237;
+            color: white;
+            z-index: 100 !important;
+            position: relative;
+            padding: .5em;
+        }
+
+        .toolbar-top .uk-nav a {
+            font-size: 130%;
+            color: white;
+            font-weight: normal !important;
+            margin-right: 1em;
+        }
+
+        .toolbar-top a.uk-active {
+            color: #05f3ff;
+        }
+
+        #toolbar-lang {
+            position: absolute;
+            top: 50%;
+            margin-top: -.8em;
+            right: 1em;
+            color: white;
+        }
+
+        #toolbar-logo a:link,
+        #toolbar-logo a:visited {
+            color: white;
+        }
+
+        #toolbar-logo a:hover {
+            text-decoration: none;
+            color: #05f3ff;
+        }
+
+        #toolbar-lang a:link,
+        #toolbar-lang a:visited {
+            color: white;
+            -webkit-font-smoothing: subpixel-antialiased !important;
+            font-weight: bold;
+        }
+
+        #toolbar-logo {
+            font-family: 'Marcellus', serif !important;
+            line-height: 100%;
+            -webkit-font-smoothing: subpixel-antialiased;
+            margin-right: 1em;
+        }
+
+        #toolbar-divider {
+            margin-right: 1em;
+            margin-top: -.2em;
+            color: #05f3ff;
+            font-weight: bolder;
+        }
+
+        #toolbar-divider:before {
+            content: "\2502";
+        }
+
+        .wrapper-sidebar-bulleted-nav {
+            /*float:right;*/
+            width: 2em;
+            display: block;
+            height: 80vh;
+            position: absolute;
+            right: 0;
+        }
+
+        .sidebar-bulleted-nav {
+            position: fixed;
+            top: 38%;
+            z-index: 200;
+        }
+
+        .sidebar-bulleted-nav a {
+            font-size: 140%;
+            font-weight: bold;
+        }
+
+        .sidebar-bulleted-nav a:before {
+            content: "\25CB";
+            color: #0f1237;
+        }
+
+        .sidebar-bulleted-nav .uk-active a:before {
+            content: "\25CF" !important;
+            background: none !important;
+            color: #0f1237;
+        }
+
+        .clients-grid div {
+            text-align: center;
+            padding: 0;
+            margin: 0;
+        }
+
+        .partners-grid {
+            font-size: 75%;
+            line-height: 100%;
+            -webkit-font-smoothing: subpixel-antialiased;
+        }
+
+        .partners-grid h2 {
+            margin-bottom: -1.5em;
+            margin-top: 1.5em;
+            font-weight: bolder;
+            vertical-align: middle;
+            font-size: 140%;
+        }
+
+        .partners-grid h2 img {
+            margin-top: -.1em;
+        }
+
+        .partners-grid h3 {
+            font-style: italic;
+            font-weight: bold;
+            margin: 3em 0 0 2.5em;
+            padding: 0;
+            color: black;
+            font-size: 100% !important;
+        }
+
+        .partners-grid p {
+            padding: 0 !important;
+            margin: 0 0 0 2.5em !important;
+            color: #575757;
+        }
+
+        .partners-grid a {
+            color: #00a8b9;
+            text-decoration: underline;
+        }
+
+        .footer {
+            background: #0f1237;
+            color: #6F7994;
+        }
+
+        .footer-logo {
+            color: #6F7994;
+            font-family: 'Marcellus', serif !important;
+            position: relative;
+            z-index: 100;
+            line-height: 80%;
+            font-size: 250%;
+            padding: 0.5em 0em 0em 0em;
+        }
+
+        .footer-logo a{
+            text-decoration: none !important;
+        }
+
+        .footer h2,
+        .footer h3 {
+            color: #6F7994;
+            font-weight: bolder;
+            font-size: 120%;
+        }
+
+        .footer h3 {
+            margin: 0;
+            padding: 0;
+        }
+
+        .footer hr {
+            border-color: #6F7994;
+        }
+
+        .footer-lang {
+            position: absolute;
+            top: 0.8em;
+            right: 1em;
+            z-index: 200;
+        }
+
+        .footer-lang a:link,
+        .footer-lang a:visited {
+            color: #6F7994;
+            text-decoration: none;
+            margin: 0;
+        }
+
+        .footer a {
+            color: #6F7994;
+            text-decoration: underline;
+            font-weight: normal !important;
+            margin-right: 1em;
+        }
+
+        .footer a:hover,
+        .footer a.uk-active {
+            color: #05f3ff;
+        }
+
+        .footer .uk-nav {
+            margin-bottom: 0.8em;
+        }
+
+        .footer .coordinations {
+            margin: 0;
+            padding: 1.5em 0 2em 0;
+            font-size: 95%;
+        }
+
+        .footer .coordinations>div {
+            margin: 0;
+            padding: 0;
+        }
+
+        .footer .coordinations div.map {
+            padding-top: 1.3em;
+        }
+
+        .footer .uk-form-row {
+            margin: 1em 0 1em 0 !important;
+        }
+
+        .footer .uk-form-row input[type=text],
+        .footer .uk-form-row textarea {
+            width: 90%;
+        }
+
+        .footer .uk-form-row input,
+        .footer .uk-form-row textarea {
+            border-radius: .16em;
+        }
+
+        .footer .uk-form-row input[type=button] {
+            font-size: 120%;
+            padding: 0.7em;
+        }
+
+        .footer .copy {
+            text-align: center;
+            margin: 0;
+            padding: 2em 0 4em 0;
+        }
+
+        .footer .copy p,
+        .footer .copy a {
+            line-height: 150%;
+            margin: 0;
+            padding: 0;
+        }
+
+        #service h1 {
+            text-align: center;
+            font-size: 300%;
+            color: #0f1237;
+            text-shadow: 1px 1px 2px white;
+        }
+
+        #service h2 {
+            font-size: 170%;
+            font-weight: bold;
+            color: #464646;
+            text-align: center;
+            margin: 0.2em;
+            text-shadow: 1px 1px 1px white;
+        }
+
+        #service p {
+            margin: 0 !important;
+            padding: 0 1em 0 1em !important;
+        }
+
+        #service i {
+            font-size: 400%;
+            color: #02a8e6;
+            text-shadow: 1px 1px 1px white;
+        }
+
+        #service div {
+            margin: 0;
+            padding: 0;
+        }
+
+        #service .uk-grid div{
+            margin-bottom: 2em;
+        }
+
+        #service .slide-content-wrapper {
+            padding: 0 2em 0em 2em;
+            margin: 5em 0 5em 0;
+        }
+
+        #service .get-more-button {
+            border-radius: 0.3em;
+            padding: 0.5em 1.5em;
+            color: white !important;
+        }
+
+        #service .get-more-button i {
+            vertical-align: baseline;
+            font-size: 100% !important;
+            color: white !important;
+            text-shadow: none;
+            margin-left: 0.5em;
+        }
+
+        #service a,
+        #service a:link,
+        #service a:visited {
+            -o-transition: .5s;
+            -ms-transition: .5s;
+            -moz-transition: .5s;
+            -webkit-transition: .5s;
+            transition: .5s;
+            color: #616161;
+        }
+
+        #service a:hover {
+            color: #000000;
+            text-decoration: none;
+        }
+
+        #service a i,
+        #service a h2 {
+            -o-transition: .5s;
+            -ms-transition: .5s;
+            -moz-transition: .5s;
+            -webkit-transition: .5s;
+            transition: .5s;
+            color: #02a8e6;
+        }
+
+        #service a:hover i,
+        #service a:hover h2 {
+            color: #1976e6;
+        }
+
+        .slide {
+            /*border: 1px solid yellow;*/
+        }
+
+        .slide-content-wrapper {
+            padding: 0 4em 0em 6.8em;
+            margin: 5em 0 5em 0;
+            /*border: 1px solid #0cff1e;*/
+        }
+
+        .slide p {
+            margin-left: 1.5em;
+            vertical-align: middle !important;
+        }
+
+        .slide h1 {
+            font-size: 200%;
+            line-height: 200%;
+            font-weight: bold;
+            color: #0f1237;
+        }
+
+        .slide center {
+            font-weight: bold;
+        }
+
+        .content-centered {
+            text-align: center !important;
+        }
+
+        .mobile-only {
+            display: none;
+        }
+
+        .menu-bars{
+            color: #05f3ff;
+            font-size: 200%;
+            position: absolute;
+            top: 1em;
+            right: 1em;
+            z-index: 1000;
+        }
+
+        .uk-offcanvas-bar {
+            background-color: #0f1237;
+            color: white;
+        }
+
+        .menu-logo {
+            font-family: 'Marcellus', serif !important;
+            line-height: 80%;
+            font-size: 250%;
+            padding: 0.8em 1em 0.5em .35em;
+            color: #0f1237 !important;
+        }
+
+        .menu-logo a,
+        .menu-logo a:link,
+        .menu-logo a:active,
+        .menu-logo a:hover{
+            text-decoration: none;
+            color: white;
+        }
+
+        .menu-lang {
+            text-align: center;
+            padding: 1em;
+            font-size: 140%;
+        }
+
+        .menu-lang a,
+        .menu-lang a:link,
+        .menu-lang a:visited,
+        .menu-lang a:hover{
+            color: white;
+        }
+
+        .uk-nav-offcanvas a{
+            /*border-bottom: 1px solid #fff;*/
+            font-size: 120%;
+            padding: .5em 0em .5em .9em !important;
+        }
+
+        /* For tablets and low res monitors*/
+        @media (max-width: 1024px) {
+            .wrapper{
+                width: 100%;
+            }
+
+            .wrapper-sidebar-bulleted-nav{
+                display: none;
+            }
+        }
+
+        /* For smartphones in landscape */
+        @media (max-width: 800px) {
+            body, html {
+                font-size: 15px;
+            }
+
+            .wrapper{
+                width: 100%;
+            }
+
+            .footer .wrapper {
+                width: 100%;
+                padding: 1em;
+            }
+
+            #toolbar-logo,
+            #toolbar-divider,
+            #toolbar-lang{
+                display: none;
+            }
+
+            .toolbar-top .uk-nav a {
+                font-size: 90%;
+            }
+
+            .header-logo {
+                padding: 0.8em 1em 0.5em 0.5em;
+            }
+            .toolbar-top {
+                padding-left: 1.5em;
+            }
+
+            .slide-content-wrapper {
+                padding: 0 1.5em 0em 1.5em;
+                margin: 2em 0 2em 0;
+            }
+
+            .wrapper-sidebar-bulleted-nav{
+                display: none;
+            }
+
+            #service h1 {
+                text-align: center;
+                font-size: 300%;
+                color: #0f1237;
+                text-shadow: 1px 1px 2px white;
+            }
+
+            #service h2 {
+                font-size: 130%;
+                margin: 0.2em;
+                text-shadow: 1px 1px 1px white;
+            }
+
+            #service p {
+                margin: 0 !important;
+                padding: 0 1em 0 1em !important;
+                font-size: 90%;
+            }
+
+            #service i {
+                font-size: 250%;
+                color: #02a8e6;
+                text-shadow: 1px 1px 1px white;
+            }
+
+            #service div {
+                margin: 0;
+                padding: 0;
+            }
+
+            #service .slide-content-wrapper {
+                padding: 0;
+                margin: 0;
+            }
+
+            .footer .uk-form-row input[type=text],
+            .footer .uk-form-row textarea {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 400px) {
+            .toolbar-top,
+            .header-lang,
+            .footer-lang{
+                display: none !important;
+            }
+
+            .footer {
+                font-size: 90%;
+            }
+
+            .footer .uk-form-row input[type=text],
+            .footer .uk-form-row textarea {
+                width: 100%;
+            }
+
+            .mobile-only {
+                display: block;
+            }
+
+        }
+
+    </style>
+
+
+</head>
+<body>
+
+
+<div id="mobile-menu" class="uk-offcanvas">
+    <div class="uk-offcanvas-bar">
+        <h1 class="menu-logo"><a href="http://admconsult.by">ADM<br>consult</a></h1>
+
+        <hr style="width: 98%;">
+
+        <ul class="uk-nav uk-nav-offcanvas">
+            <li><a href="#about">О нас</a></li>
+            <li><a href="#service">Услуги</a></li>
+            <li><a href="#clients">Клиенты</a></li>
+            <li><a href="#partners">Партнеры</a></li>
+            <li><a href="#contacts">Контакты</a></li>
+        </ul>
+
+        <div class="menu-lang">
+            <a href="/ru/" class="lang-active">ru</a> |
+            <a href="/en/">en</a> |
+            <a href="/de/">de</a>
+        </div>
+    </div>
+</div>
+
+<div class="large-header" id="about">
+    <div class="wrapper">
+        <h1 class="header-logo"><a href="http://admconsult.by">ADM<br>consult</a></h1>
+
+        <div class="header-lang">
+            <a href="/ru/" class="lang-active">ru</a> |
+            <a href="/en/">en</a> |
+            <a href="/de/">de</a>
+        </div>
+
+        <hr class="mobile-only"/>
+        <a class="mobile-only menu-bars" href="#mobile-menu" data-uk-offcanvas><i class="fa fa-bars"></i></a>
+
+    </div>
+</div>
+
+<div class="toolbar-top uk-clearfix" data-uk-sticky="{boundary: '#contacts'}">
+    <div class="wrapper uk-vertical-align" data-uk-scrollspy-nav="{closest:'a', smoothscroll:true}">
+
+        <div id="toolbar-logo" class="invisible uk-vertical-align-middle"><a href="#about">ADM<br>consult</a></div>
+        <div id="toolbar-divider" class="invisible uk-vertical-align-middle"></div>
+
+
+        <div class="uk-nav uk-vertical-align-middle">
+            <a href="#about">О нас</a>
+            <a href="#service">Услуги</a>
+            <a href="#clients">Клиенты</a>
+            <a href="#partners">Партнёры</a>
+            <a href="#contacts">Контакты</a>
+        </div>
+
+        <div id="toolbar-lang" class="invisible uk-vertical-align-middle">
+            <a href="/ru/" class="lang-active">ru</a> |
+            <a href="/en/">en</a> |
+            <a href="/de/">de</a>
+        </div>
+    </div>
+</div>
+
+
+<div class="wrapper">
+
+    <div class="wrapper-sidebar-bulleted-nav">
+        <ul class="uk-nav sidebar-bulleted-nav" data-uk-scrollspy-nav="{closest:'li', smoothscroll:true}">
+            <li class=""><a href="#about"></a></li>
+            <li class=""><a href="#service"></a></li>
+            <li class=""><a href="#clients"></a></li>
+            <li class=""><a href="#partners"></a></li>
+            <li class=""><a href="#contacts"></a></li>
+        </ul>
+    </div>
+
+
+    <div class="slide uk-vertical-align">
+        <div class="uk-vertical-align-middle slide-content-wrapper">
+            <h1>О компании «АДМ консалт»</h1>
+
+            <p>Уже более 20 лет мы оказываем профессиональные услуги по юридическому и бухгалтерскому
+                сопровождению для отечественных и иностранных компаний, осуществляющих предпринимательскую
+                и инвестиционной деятельность как внутри Республики Беларусь, так и за её рубежами.</p>
+
+            <p>Мы тесно сотрудничаем с юридическими фирмами, адвокатами, нотариусами и аудиторами из
+                Германии, Австрии, Швейцарии, Франции, Польши, Литвы, Латвии и России.</p>
+
+            <p>Добросовестность, порядочность и прозрачность по отношению друг к другу — наши основые принципы.</p>
+        </div>
+    </div>
+
+</div>
+
+<div style="background: rgba(193, 193, 193, 0.47); box-shadow: 0 0 10px rgba(0,0,0,0.5)">
+    <div class="wrapper">
+        <div class="slide uk-vertical-align" id="service">
+            <div class="uk-vertical-align-middle slide-content-wrapper">
+                <h1>Услуги</h1>
+
+                <div class="uk-grid">
+                    <div class="uk-width-large-1-3 uk-width-small-1-2">
+                        <a href="services/">
+                            <p class="content-centered">
+                                <i class="fa fa-file-text-o"></i>
+
+                                <h2>Юридические</h2>
+                            </p>
+                            <p>
+                                Мы оказываем активную косультационную помощь, подготавливаем требуемые документы в
+                                соответствии
+                                с региональным законодательством и представляем интересы наших клиентов в различных
+                                организациях.
+                            </p>
+                        </a>
+                    </div>
+
+                    <div class="uk-width-large-1-3 uk-width-small-1-2">
+                        <a href="services/">
+                            <p class="content-centered">
+                                <i class="fa fa-calculator"></i>
+
+                                <h2>Бухгалтерские</h2>
+                            </p>
+                            <p>
+                                Мы поможем в бухгалтерском сопровождении финансово-хозяйственной деятельности Вашего
+                                предприятия с возможностью предоставления официальной финансовой отчетности согласно
+                                международных стандартов.
+                            </p>
+                        </a>
+                    </div>
+
+                    <div class="uk-width-large-1-3 uk-width-small-1-1">
+                        <a href="services/">
+                            <p class="content-centered">
+                                <i class="fa fa-globe"></i>
+
+                                <h2>Переводы</h2>
+                            </p>
+                            <p>
+                                Благодаря качественным услугам в области письменного и устного переводов вы можете не
+                                отвлекаются на поиск «общего» языка со своими деловыми партнерами, а непосредственно
+                                решать
+                                бизнес-задачи.
+                            </p>
+                        </a>
+                    </div>
+
+                    <div class="uk-width-1-1 content-centered">
+                        <a class="uk-button uk-button-primary get-more-button">
+                            Подробнее
+                            <i class="fa  fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="wrapper">
+    <div class="slide uk-vertical-align" id="clients">
+        <div class="uk-vertical-align-middle slide-content-wrapper">
+            <h1>Наши клиенты</h1>
+
+            <p>
+                Мы оказывали поддержку при регистрации целого ряда представительств зарубежных компаний и
+                предприятий с участием иностранных инвесторов. Как правило, они и в дальнейшем продолжают
+                пользоваться нашими услугами по юридическому и бухгалтерскому сопровождению, составляя круг
+                постоянных клиентов нашей компании.
+            </p>
+
+            <div class="uk-grid clients-grid">
+                <div class="uk-width-large-1-2 uk-width-small-1-2">
+                    <img src="img/bosch-logo.svg" width="220">
+                </div>
+
+
+                <div class="uk-width-large-1-2 uk-width-small-1-2">
+                    <img src="img/samsung-logo.svg" width="220">
+                </div>
+
+                <div class="uk-width-large-1-3 uk-width-small-1-2">
+                    <img src="img/parker-hannifin-logo.svg" width="150">
+                </div>
+
+                <div class="uk-width-large-1-3 uk-width-small-1-2">
+                    <img src="img/hettich-logo.svg" width="150">
+                </div>
+
+                <div class="uk-width-large-1-3 uk-width-small-1-2">
+                    <img src="img/schuco-logo.svg" width="150">
+                </div>
+
+                <div class="uk-width-large-1-2 uk-width-small-1-2">
+                    <img src="img/pharmagarant-logo.svg" width="150">
+                </div>
+
+                <div class="uk-width-large-1-2 uk-width-small-1-1">
+                    <img src="img/germany-logo.svg" width="150">
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="slide uk-vertical-align" id="partners">
+        <div class="uk-vertical-align-middle slide-content-wrapper">
+            <h1>Наши партнёры</h1>
+
+            <p>
+                На протяжении многих лет мы тесно сотрудничаем с юридическими фирмами, адвокатами,
+                нотариусами и аудиторами из Германии, Австрии, Швейцарии, Франции, Польши, Литвы, Латвии и
+                России, что позволяет нам оказывать юридическую помощь как иностранным компаниям, ведущим
+                деятельность в Республике Беларусь, так и белорусским субъектам, работающим за рубежом.
+            </p>
+
+            <div class="uk-grid partners-grid">
+                <div class="uk-width-large-1-3 uk-width-small-1-2">
+                    <h2>
+                        <img src="img/austria-flag.svg" width="25">
+                        Вена, Австрия
+                    </h2>
+
+                    <h3>
+                        Austrocount<br>
+                        Wirtschaftsprüfungs- und<br>
+                        Steuerberatungsgesellschaft m.b.H.
+                    </h3>
+
+                    <p>
+                        Operngasse 6/2.Stock<br>
+                        A-1010 Wien<br>
+                        Телефон: +43 (0) 1 / 310 38 71<br>
+                        Факс: Dw -18<br>
+                        E-mail: office@austrocount.at<br>
+                        <a href="http://austrocount.at/">http://austrocount.at/</a>
+                    </p>
+
+                    <h3>
+                        Proksch & Partner Rechtsanwälte OG
+                    </h3>
+
+                    <p>
+                        Am Heumarkt 9/I/11<br>
+                        A–1030 Wien<br>
+                        Телефон: +43 1 713 46 51<br>
+                        Факс: +43 1 713 84 35<br>
+                        E-mail: proksch@eurojuris.at<br>
+                        <a href="http://www.prokschundpartner.at/">http://www.prokschundpartner.at/</a>
+                    </p>
+                </div>
+
+                <div class="uk-width-large-1-3 uk-width-small-1-2">
+                    <h2>
+                        <img src="img/germany-flag.svg" width="25">
+                        Берлин, Германия
+                    </h2>
+
+                    <h3>
+                        RA Stefan Neumann
+                    </h3>
+
+                    <p>
+                        Kantstraße 140<br>
+                        10623 Berlin<br>
+                        Телефон: 030 / 864 22 022<br>
+                        Факс: 030 / 864 22 033<br>
+                        E-mail: ra-neumann@t-online.de
+                    </p>
+
+                    <h3>
+                        Rechtsanwalt & Notar
+                    </h3>
+
+                    <p>
+                        Wolfgang Hosak<br>
+                        Pariser Straße 3 in 10719 Berlin<br>
+                        Телефон: 030 8543098<br>
+                        Факс: 030 8541016
+                    </p>
+                </div>
+
+
+                <div class="uk-width-large-1-3 uk-width-small-1-2">
+                    <h2>
+                        <img src="img/lithuania-flag.svg" width="25">
+                        Вильнюс, Литва
+                    </h2>
+
+                    <h3>
+                        Law firm Vilys and partners AVIP
+                    </h3>
+
+                    <p>
+                        Klaipėdos g. 3, LT-01117 Vilnius, Lithuania<br>
+                        Телефон: + 370 5 212 1116<br>
+                        Факс: + 370 5 261 7406<br>
+                        E-mail: info@avip.lt<br>
+                        <a href="http://www.avip.lt/">http://www.avip.lt/</a>
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<div class="footer" id="contacts">
+
+    <div class="wrapper">
+
+        <h1 class="footer-logo"><a href="#about" data-uk-smooth-scroll>ADM<br>consult</a></h1>
+
+        <div class="uk-nav">
+            <a href="#about" data-uk-smooth-scroll>В начало</a>
+            <a href="#service" data-uk-smooth-scroll>Услуги</a>
+            <a href="#clients" data-uk-smooth-scroll>Клиенты</a>
+            <a href="#partners" data-uk-smooth-scroll>Партнёры</a>
+        </div>
+
+        <div class="footer-lang">
+            <a href="/ru/" class="lang-active">ru</a> |
+            <a href="/en/">en</a> |
+            <a href="/de/">de</a>
+        </div>
+
+    </div>
+
+
+    <hr style="width: 98%; margin: 0 auto">
+
+    <div class="wrapper">
+        <div class="coordinations uk-grid">
+            <div class="uk-width-large-1-2 uk-width-small-1-1">
+                <h2>ООО «АДМ консалт»</h2>
+
+                <p>
+                    <b>Адрес:</b> Республика Беларусь, г. Минск,<br>
+                    пр-т Победителей, д. 103, офис 501
+                </p>
+
+                <p>
+                    <b>Телефон-факс:</b> (+375 17) 308-74-80<br>
+                    <b>Мобильный телефон:</b> (+375 29) 55-66-111
+                </p>
+
+                <p>
+                    <b>Электропочта:</b> <a href="mailto:info@admconsult.by">info@admconsult.by</a>
+                </p>
+
+                <h3>Напишите нам:</h3>
+
+                <form class="uk-form" id="send-message-form">
+                    <fieldset>
+                        <div class="uk-form-row">
+                            <input type="text" placeholder="Как с  Вами связаться" id="send-message-form-connection">
+                        </div>
+
+                        <div class="uk-form-row">
+                            <textarea cols="33" rows="7" placeholder="Ваше сообщение" id="send-message-form-message"></textarea>
+                        </div>
+
+                        <div class="uk-form-row">
+                            <input type="button" value="Отправить" class="uk-button" onclick="submitMessage();">
+                        </div>
+
+                    </fieldset>
+                </form>
+            </div>
+            <div class="uk-width-large-1-2 uk-width-small-1-1 map">
+                <script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=RbErsUwlmgtnB5RE0OJcHnmTzEfp1yp4&width200&height=502&lang=ru_RU&sourceType=constructor"></script>
+            </div>
+        </div>
+        <div class="copy">
+            <p>&copy; ООО «АДМ консалт», 2015</p>
+
+            <p>Создание сайта: <a href="http://dandedkov.com">dandedkov.com</a></p>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
